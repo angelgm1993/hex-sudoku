@@ -3,11 +3,8 @@ import time
 import random
 
 start_time = time.clock()
-random.seed(18)  # 18>>7>14>22>19=30=31
+random.seed(18)  # 18>7>14>22>19>30>31
 T = .3112  # .3112 16.6sec
-
-# puzzle b took 323 sec
-# puzzle d took 233 sec
 
 puzzle = np.empty((16, 16), dtype=int)
 original_puzzle = np.empty((16, 16), dtype=str)
@@ -105,7 +102,7 @@ def create_neighbor():
     return copy
 
 
-read_puzzle("e.txt")  # str(input("Enter name: ")) + ".txt")
+read_puzzle(str(input("Enter name: ")) + ".txt")
 # puzzle a took 10 sec
 # puzzle b took 323 sec
 # puzzle c took ? sec
